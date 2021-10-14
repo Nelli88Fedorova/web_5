@@ -3,26 +3,20 @@
 <head>
 <meta charset= "UTF-8">
 <title>5 Задание</title>
-<script>
-function count() {
-  let f1 = document.getElementsByName("val1");
-  let f2 = document.getElementsByName("val2");
-  let r = document.getElementById("result");
-  r.innerHTML = Number(f1[0].value) * Number(f2[0].value);
-  return false;
-}
-</script>
+<script src="script.js" defer></script>
+
 <style>
 body{
 font-size:x-large;
-}</style>
+}
+</style>
 </head>
 <body>
 
 <form>
   <label> Цена за штуку <input name="val1" type="text"></label>
   <label> Количество <input name="val2" type="text"></label>
-  <button id="butt" onclick="return count();"><h3>Подсчитать</h3></button>
+  <button id="butt"><h3>Подсчитать</h3></button>
 </form>
 <table>
 <tr class="s2">
@@ -31,6 +25,5 @@ font-size:x-large;
     <td> рублей</td>
   </tr>
 </table>
-
 </body>
 </html>
